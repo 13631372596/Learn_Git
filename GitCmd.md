@@ -64,10 +64,30 @@
 >git branch
 
 ### 14.合并某份之到当前分支
-git merge tree2
+>git merge tree2
+
+>git merge --no-ff -m "no-ff" tree2
 
 ### 15.删除分支
 >git branch -d tree2
+
+### 16.查看日志记录
+>git log --graph --pretty=oneline --abbrev-commit 
+
+>git log --graph
+
+### 17.隐藏工作区及恢复删除
+>git stash
+
+>git stash list
+
+>git stash apply
+
+>git stash pop
+
+
+
+
 
 
 
