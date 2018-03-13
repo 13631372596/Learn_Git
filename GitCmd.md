@@ -2,6 +2,8 @@
 
 ###	1.初始化仓库
 >git init
+
+
 ###	2.提交文件
 >git add f1.txt f2.txt 
 
@@ -47,6 +49,21 @@
 >git push -u origin master
 
 >git push origin master
+
+### 11.克隆远程库
+>git clone origin git@github.com:13631372596/Learn_Git.git
+
+### 12.创建分支
+>git checkout -b tree1
+
+>git branch tree2
+
+>git checkout tree2
+
+### 13.查看分支
+>git branch
+
+### 14.
 
 
 
