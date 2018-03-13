@@ -63,7 +63,10 @@
 ### 13.查看分支
 >git branch
 
-### 14.删除分支
+### 14.合并某份之到当前分支
+git merge tree2
+
+### 15.删除分支
 >git branch -d tree2
 
 
