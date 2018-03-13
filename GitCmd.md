@@ -63,7 +63,8 @@
 ### 13.查看分支
 >git branch
 
-### 14.
+### 14.删除分支
+>git branch -d tree2
 
 
 
