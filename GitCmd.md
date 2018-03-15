@@ -95,8 +95,59 @@
 
 >git push origin dev
 
-### 20在本地创建和远程分支对应的分支
+### 20.在本地创建和远程分支对应的分支,更新项目
 >git branch --set-upstream branch-name origin/branch-name
+
+>git pull
+
+### 21.创建标签并查看
+>git tag v1.0
+
+>git tag
+
+>git show v1.0
+
+>git tag -a "v1.1" -m "create v1.1" commit_id
+
+>git tag -s "v1.1" -m "create v1.1" commit_id
+
+### 22.删除本地标签和远程标签
+>git tag -d v1.0
+
+>git push origin :refs/tags/v1.0
+
+### 23.配置Git名字和Email地址
+>git config --global user.name "xxx"
+
+>git config --global user.email "xxx@xxx.com"
+
+### 24.在工作区定义".gitignore"文件
+[点击查看.gitignore](https://github.com/github/gitignore)
+	
+	# Windows:
+	Thumbs.db
+	ehthumbs.db
+	Desktop.ini
+
+	# Python:
+	*.py[cod]
+	*.so
+	*.egg
+	*.egg-info
+	dist
+	build
+
+	# My configurations:
+	db.ini
+	deploy_key_rsa
+
+### 25.强制添加文件和查看忽略规则
+>git add -f xxx.class
+
+>git check-ignore -v xxx.class
+
+### 26.配置快捷键
+>git config --global alias.st status
 
 
 
