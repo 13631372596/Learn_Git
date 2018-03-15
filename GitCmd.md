@@ -50,6 +50,8 @@
 
 >git push origin master
 
+>git push origin dev
+
 ### 11.克隆远程库
 >git clone origin git@github.com:13631372596/Learn_Git.git
 
@@ -84,6 +86,17 @@
 >git stash apply
 
 >git stash pop
+
+### 18.查看远程库
+>git remote -v
+
+### 19.创建远程库分支到本地并提交
+>git checkout -b dev origin/dev
+
+>git push origin dev
+
+### 20在本地创建和远程分支对应的分支
+>git branch --set-upstream branch-name origin/branch-name
 
 
 
