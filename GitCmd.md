@@ -1,8 +1,7 @@
-# Git命令
+# Git常用命令
 
 ###	1.初始化仓库
 >git init
-
 
 ###	2.提交文件
 >git add f1.txt f2.txt 
@@ -12,10 +11,10 @@
 ###	3.查看状态
 >git status
 
-
 ###	4.详细比对
 >git diff
 
+>git diff HEAD -- f1.txt 
 
 ###	5.查看记录
 >git log
@@ -24,24 +23,19 @@
 
 >git reflog
 
-
 ###	6.恢复版本
 >git reset --hard HEAD^
 
 >git reset --hard commit_id
 
-
 ###	7.撤销修改
 >git checkout -- f1.txt	（从暂存区更新下来工作区,没有则从版本库更新下来）
-
 
 ###	8.撤销暂存区
 >git reset HEAD f1.txt	（重置暂存区）
 
-
 ###	9.添加delete到暂存区
 >git rm f1.txt
-
 
 ###	10.GitHub添加远程库
 >git remote add origin git@github.com:13631372596/Learn_Git.git
@@ -100,7 +94,13 @@
 
 >git pull
 
-### 21.创建标签并查看
+>git fetch origin
+
+>git branch --all
+
+>git merge origin/dev
+
+### 21.创建标签并查看,可指定标签信息
 >git tag v1.0
 
 >git tag
@@ -109,17 +109,19 @@
 
 >git tag -a "v1.1" -m "create v1.1" commit_id
 
->git tag -s "v1.1" -m "create v1.1" commit_id
-
 ### 22.删除本地标签和远程标签
 >git tag -d v1.0
 
 >git push origin :refs/tags/v1.0
 
-### 23.配置Git名字和Email地址
+### 23.配置Git名字和Email地址,并生成SSH Key
 >git config --global user.name "xxx"
 
 >git config --global user.email "xxx@xxx.com"
+
+>cd ~/.ssh
+
+>ssh -keygen -t rsa -C "xxx@xxx.com"
 
 ### 24.在工作区定义".gitignore"文件
 [点击查看.gitignore](https://github.com/github/gitignore)
