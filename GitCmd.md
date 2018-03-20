@@ -92,6 +92,8 @@
 ### 20.在本地创建和远程分支对应的分支,更新项目
 >git branch --set-upstream branch-name origin/branch-name
 
+>git branch --set-upstream-to=upstream/branch-name branch-name
+
 >git pull
 
 >git fetch origin
@@ -121,7 +123,7 @@
 
 >cd ~/.ssh
 
->ssh -keygen -t rsa -C "xxx@xxx.com"
+>ssh-keygen -t rsa -C "xxx@xxx.com"
 
 ### 24.在工作区定义".gitignore"文件
 [点击查看.gitignore](https://github.com/github/gitignore)
